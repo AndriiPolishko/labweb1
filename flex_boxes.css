@@ -24,30 +24,6 @@ h5 {
   height: 100px;
 }
 
-.three {
-  grid-area: three;
-  height: 50px;
-}
-
-.four {
-  grid-area: four;
-  height: 400px;
-}
-
-.five {
-  grid-area: five;
-}
-
-.six {
-  grid-area: six;
-  height: 50px;
-}
-
-.footer {
-  grid-area: footer;
-  height: 100px;
-}
-
 .wrapper {
   display: grid;
   grid-template-areas:
@@ -66,9 +42,11 @@ h5 {
   border: 1px solid black;
 }
 
-.footer {
+footer {
   background-color: powderblue;
   border: 1px solid black;
+  grid-area: footer;
+  height: 100px;
 }
 
 article {
@@ -88,17 +66,22 @@ article {
 }
 
 .three {
+  grid-area: three;
+  height: 50px;
   text-align: center;
   background-color: #90ee90;
   border: 1px solid black;
 }
 
 .four {
+  grid-area: four;
+  height: 400px;
   text-align: center;
   border: 1px solid black;
 }
 
 .five {
+  grid-area: five;
   text-align: center;
   background-color: #faebd7;
   position: static;
@@ -106,6 +89,8 @@ article {
 }
 
 .six {
+  grid-area: six;
+  height: 50px;
   text-align: center;
   background-color: #90ee90;
   border: 1px solid black;
@@ -130,8 +115,19 @@ article {
   padding: 2px;
 }
 
-.Home {
+section {
+  grid-area: six;
+  height: 50px;
+  text-align: center;
+  background-color: #90ee90;
+  border: 1px solid black;
+  align-items: center;
 }
 
-.FAQ {
+aside {
+  grid-area: five;
+  text-align: center;
+  background-color: #faebd7;
+  position: static;
+  border: 1px solid black;
 }
