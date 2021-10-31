@@ -24,10 +24,6 @@ h5 {
   height: 100px;
 }
 
-.two {
-  grid-area: two;
-}
-
 .three {
   grid-area: three;
   height: 50px;
@@ -75,7 +71,16 @@ h5 {
   border: 1px solid black;
 }
 
+article {
+  grid-area: two;
+  text-align: center;
+  background-color: #faebd7;
+  text-align: center;
+  border: 1px solid black;
+}
+
 .two {
+  grid-area: two;
   text-align: center;
   background-color: #faebd7;
   text-align: center;
