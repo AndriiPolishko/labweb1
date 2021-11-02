@@ -4,7 +4,7 @@ module.exports = {
         "browser": true,
         "es2021": true
     },
-    "extends": "eslint:recommended",
+    "extends": ["plugin:sonarjs/recommended"],//"eslint:recommended",
     "parserOptions": {
         "ecmaVersion": 13,
         "sourceType": "module"
