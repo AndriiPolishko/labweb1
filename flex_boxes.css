@@ -108,6 +108,14 @@ article {
   align-items: center;
 }
 
+a {
+  border: 1px solid black;
+  margin: 5px;
+  background-color: powderblue;
+  padding: 2px;
+  display: grid;
+}
+
 .same {
   border: 1px solid black;
   margin: 5px;
