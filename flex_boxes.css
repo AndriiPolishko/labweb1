@@ -54,6 +54,7 @@ article {
   text-align: center;
   background-color: #faebd7;
   text-align: center;
+  position: sticky;
   border: 1px solid black;
 }
 
@@ -79,23 +80,6 @@ article {
   text-align: center;
   border: 1px solid black;
   overflow: auto;
-}
-
-.five {
-  grid-area: five;
-  text-align: center;
-  background-color: #faebd7;
-  position: static;
-  border: 1px solid black;
-}
-
-.six {
-  grid-area: six;
-  height: 50px;
-  text-align: center;
-  background-color: #90ee90;
-  border: 1px solid black;
-  align-items: center;
 }
 
 .flex_container {
