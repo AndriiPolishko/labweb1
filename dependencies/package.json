@@ -2,14 +2,14 @@
   "name": "labweb1",
   "version": "1.0.0",
   "description": "",
-  "main": "scripts.js",
+  "main": "../scripts.js",
   "scripts": {
-    "eslint:fix": "eslint . --fix --ignore-path .gitignore",
-    "eslint:check": "eslint . --ignore-path .gitignore",
-    "format:fix": "prettier --write . --ignore-path .gitignore",
-    "format:check": "prettier --check . --ignore-path .gitignore",
-    "stylelint:fix": "stylelint \"**/*.css\" --fix --ignore-path .gitignore",
-    "stylelint:check": "stylelint \"**/*.css\" --ignore-path .gitignore"
+    "eslint:fix": "../node_modules/.bin/eslint . --fix --ignore-path .gitignore",
+    "eslint:check": "../node_modules/.bin/eslint . --ignore-path .gitignore",
+    "format:fix": "../node_modules/.bin/prettier --write . --ignore-path .gitignore",
+    "format:check": "../node_modules/.bin/prettier --check . --ignore-path .gitignore",
+    "stylelint:fix": "../node_modules/.bin/stylelint \\\"**/*.css\\\" --fix --ignore-path .gitignore",
+    "stylelint:check": "../node_modules/.bin/stylelint \\\"**/*.css\\\" --ignore-path .gitignore"
   },
   "repository": {
     "type": "git",
