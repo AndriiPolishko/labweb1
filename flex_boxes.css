@@ -10,15 +10,7 @@
   --light_green: #90ee90;
 }
 
-html {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-ul {
+ol, ul {
   list-style-type: none;
 }
 
@@ -30,34 +22,6 @@ p {
 body {
   padding: 0;
   margin: 0;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-h5 {
-  background-color: var(--white);
-  height: 30px;
-  width: 90px;
-  position: static;
-  right: 10px;
-  margin-left: 10px;
-  margin-top: 30px;
-  border: 1px solid var(--black);
-}
-
-.header {
-  grid-area: header;
-  height: 100%;
-  text-align: right;
-  background-color: var(--powderblue);
-  display: grid;
-  border: 1px solid var(--black);
-}
-
-.wrapper {
   display: grid;
   grid-template-areas:
     "header header header header "
@@ -66,11 +30,30 @@ h5 {
     "two four four five"
     "two six six five"
     "footer footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+  min-height: 100vh;
+}
+
+h5 {
+  background-color: var(--white);
+  height: min-content;
+  width: min-content;
+  right: 10px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+header {
+  grid-area: header;
+  height: 100%;
+  text-align: right;
+  background-color: var(--powderblue);
+  display: grid;
 }
 
 footer {
   background-color: var(--powderblue);
-  border: 1px solid var(--black);
   grid-area: footer;
   height: 100%;
 }
@@ -79,48 +62,38 @@ article {
   grid-area: two;
   text-align: center;
   background-color: var(--light_orange);
-  position: static;
-  border: 1px solid black;
 }
 
 .two {
   grid-area: two;
   text-align: center;
   background-color: var(--light_orange);
-  border: 1px solid var(--black);
-  position: static;
 }
 
-.three {
+nav {
   grid-area: three;
-  height: 50px;
-  width: 100%;
   text-align: center;
   background-color: var(--light_green);
-  border: 1px solid var(--black);
-  position: static;
 }
 
-.four {
+main {
   grid-area: four;
-  height: 400px;
   text-align: center;
-  border: 1px solid var(--black);
-  overflow: auto;
-  position: static;
 }
 
 a {
-  border: 1px solid var(--black);
   margin: 5px;
-  background-color: var(--powderblue);
+
   padding: 2px;
   display: grid;
   text-decoration: none;
 }
 
+article a {
+  background-color: var(--powderblue);
+}
+
 .same {
-  border: 1px solid var(--black);
   margin: 5px;
   background-color: var(--powderblue);
   padding: 2px;
@@ -128,18 +101,12 @@ a {
 
 section {
   grid-area: six;
-  height: 50px;
   text-align: center;
   background-color: var(--light_green);
-  border: 1px solid var(--black);
-  align-items: center;
-  position: static;
 }
 
 aside {
   grid-area: five;
   text-align: center;
   background-color: var(--light_orange);
-  position: static;
-  border: 1px solid var(--black);
 }
