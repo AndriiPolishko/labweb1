@@ -4,12 +4,14 @@
   "description": "",
   "main": "scripts.js",
   "scripts": {
-    "eslint:fix": "node_modules/.bin/eslint . --fix --ignore-path .gitignore",
+    "eslint:fix": "/eslint . --fix --ignore-path .gitignore",
     "eslint:check": "node_modules/.bin/eslint . --ignore-path .gitignore",
     "format:fix": "node_modules/.bin/prettier --write . --ignore-path .gitignore",
     "format:check": "node_modules/.bin/prettier --check . --ignore-path .gitignore",
     "stylelint:fix": "node_modules/.bin/stylelint \\\\\\\"**/*.css\\\\\\\" --fix --ignore-path .gitignore",
-    "stylelint:check": "node_modules/.bin/stylelint \\\\\\\"**/*.css\\\\\\\" --ignore-path .gitignore"
+    "stylelint:check": "node_modules/.bin/stylelint \\\\\\\"**/*.css\\\\\\\" --ignore-path .gitignore",
+    "test:labweb1": "npm run --prefix ./labweb1/ format:check && npm run --prefix ./labweb1/ eslint:check && npm run --prefix ./laba1/ stylelint:check",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -33,8 +35,6 @@
     "prettier": "^2.4.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0"
-  },
-  "husky": {
-    "hooks": {}
   }
+
 }
