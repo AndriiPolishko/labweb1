@@ -10,7 +10,11 @@
   --light_green: #90ee90;
 }
 
-ol, ul {
+ol {
+  list-style-type: none;
+}
+
+ul {
   list-style-type: none;
 }
 
