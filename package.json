@@ -4,13 +4,13 @@
   "description": "",
   "main": "scripts.js",
   "scripts": {
-    "eslint:fix": "/eslint . --fix --ignore-path .gitignore",
-    "eslint:check": "node_modules/.bin/eslint . --ignore-path .gitignore",
-    "format:fix": "node_modules/.bin/prettier --write . --ignore-path .gitignore",
-    "format:check": "node_modules/.bin/prettier --check . --ignore-path .gitignore",
-    "stylelint:fix": "node_modules/.bin/stylelint **/*.css --fix --ignore-path .gitignore",
-    "stylelint:check": "node_modules/.bin/stylelint **/*.css --ignore-path .gitignore",
-    "test:labweb1": "npm run --prefix ./labweb1/ format:check && npm run --prefix ./labweb1/ eslint:check && npm run --prefix ./laba1/ stylelint:check",
+    "eslint:fix": "eslint . --fix --ignore-path .gitignore",
+    "eslint:check": "eslint . --ignore-path .gitignore",
+    "format:fix": "prettier --write . --ignore-path .gitignore",
+    "format:check": "prettier --check . --ignore-path .gitignore",
+    "stylelint:fix": "stylelint **/*.css --fix --ignore-path .gitignore",
+    "stylelint:check": "stylelint **/*.css --ignore-path .gitignore",
+    "test:labweb1": "npm run format:check && npm run eslint:check && npm run stylelint:check",
     "prepare": "husky install"
   },
   "repository": {
@@ -36,5 +36,4 @@
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0"
   }
-
 }
