@@ -4,14 +4,14 @@
   "description": "",
   "main": "scripts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "stylelint": "stylelint \"css/**/*.css\" --ignore-path .gitignore",
-    "stylelint:fix": "stylelint --fix \"css/**/*.css\" --ignore-path .gitignore",
-    "jslint": "eslint \"js/**/*.js\" --ignore-path .gitignore",
-    "jslint:fix": "eslint --fix \"js/**/*.js\" --ignore-path .gitignore",
-    "prepare": "husky install",
-    "format": "prettier --check . --ignore-path .gitignore",
-    "format:fix": "prettier --write . --ignore-path .gitignore"
+    "eslint:fix": "/eslint . --fix --ignore-path .gitignore",
+    "eslint:check": "node_modules/.bin/eslint . --ignore-path .gitignore",
+    "format:fix": "node_modules/.bin/prettier --write . --ignore-path .gitignore",
+    "format:check": "node_modules/.bin/prettier --check . --ignore-path .gitignore",
+    "stylelint:fix": "node_modules/.bin/stylelint",
+    "stylelint:check": "node_modules/.bin/stylelint",
+    "test:labweb1": "npm run --prefix ./labweb1/ format:check && npm run --prefix ./labweb1/ eslint:check && npm run --prefix ./laba1/ stylelint:check",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
