@@ -8,8 +8,8 @@
     "eslint:check": "node_modules/.bin/eslint . --ignore-path .gitignore",
     "format:fix": "node_modules/.bin/prettier --write . --ignore-path .gitignore",
     "format:check": "node_modules/.bin/prettier --check . --ignore-path .gitignore",
-    "stylelint:fix": "node_modules/.bin/stylelint \\\\\\\"**/*.css\\\\\\\" --fix --ignore-path .gitignore",
-    "stylelint:check": "node_modules/.bin/stylelint \\\\\\\"**/*.css\\\\\\\" --ignore-path .gitignore",
+    "stylelint:fix": "node_modules/.bin/stylelint **/*.css --fix --ignore-path .gitignore",
+    "stylelint:check": "node_modules/.bin/stylelint **/*.css --ignore-path .gitignore",
     "test:labweb1": "npm run --prefix ./labweb1/ format:check && npm run --prefix ./labweb1/ eslint:check && npm run --prefix ./laba1/ stylelint:check",
     "prepare": "husky install"
   },
