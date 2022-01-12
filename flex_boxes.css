@@ -1,0 +1,115 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --black: #0c0c0c;
+  --powderblue: #b0e0e6ff;
+  --white: #ffff;
+  --light_orange: #faebd7;
+  --light_green: #90ee90;
+}
+
+ol {
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  text-align: center;
+  align-items: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-areas:
+    "header header header header "
+    "two  three three three"
+    "two four four five"
+    "two four four five"
+    "two six six five"
+    "footer footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+  min-height: 100vh;
+}
+
+h5 {
+  background-color: var(--white);
+  height: min-content;
+  width: min-content;
+  right: 10px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+header {
+  grid-area: header;
+  height: 100%;
+  text-align: right;
+  background-color: var(--powderblue);
+  display: grid;
+}
+
+footer {
+  background-color: var(--powderblue);
+  grid-area: footer;
+  height: 100%;
+}
+
+article {
+  grid-area: two;
+  text-align: center;
+  background-color: var(--light_orange);
+}
+
+.two {
+  grid-area: two;
+  text-align: center;
+  background-color: var(--light_orange);
+}
+
+nav {
+  grid-area: three;
+  text-align: center;
+  background-color: var(--light_green);
+}
+
+main {
+  grid-area: four;
+  text-align: center;
+}
+
+a {
+  margin: 5px;
+  padding: 2px;
+  display: grid;
+  text-decoration: none;
+}
+
+article a {
+  background-color: var(--powderblue);
+}
+
+.same {
+  margin: 5px;
+  background-color: var(--powderblue);
+  padding: 2px;
+}
+
+section {
+  grid-area: six;
+  text-align: center;
+  background-color: var(--light_green);
+}
+
+aside {
+  grid-area: five;
+  text-align: center;
+  background-color: var(--light_orange);
+}
